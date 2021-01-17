@@ -64,6 +64,9 @@ Level& Level::operator=(const Level& other) {
 	return *this;
 }
 
+void Level::setTexAtlas(const sf::Image &texAtlas) {
+    m_texAtlas.loadFromImage(texAtlas);
+}
 
 
 TileID Level::get(const uint32_t x, const uint32_t y) const {

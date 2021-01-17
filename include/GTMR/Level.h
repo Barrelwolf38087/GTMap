@@ -58,6 +58,8 @@ namespace gt {
 		Level(const Level& other);
 		Level& operator=(const Level& other);
 
+		void setTexAtlas(const sf::Image& texAtlas);
+
 		TileID get(uint32_t x, uint32_t y) const;
 		void update(uint32_t x, uint32_t y, TileID val);
 		
