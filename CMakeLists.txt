@@ -18,7 +18,6 @@ project(GTMR)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_library(GTMR STATIC "" src/sdfg.cpp)
-target_include_directories(GTMR PUBLIC include PRIVATE src)
+add_library(GTMR STATIC "")
 
 add_subdirectory(src)
