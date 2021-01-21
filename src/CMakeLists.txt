@@ -20,7 +20,8 @@ target_sources(GTMR
         Level.cpp
 )
 
-target_include_directories(GTMR PUBLIC ${CMAKE_SOURCE_DIR}/include PRIVATE ${CMAKE_SOURCE_DIR}/src)
+target_include_directories(GTMR PUBLIC ${PROJECT_SOURCE_DIR}/include ${PROJECT_SOURCE_DIR}/src)
+
 
 find_package(SFML 2.5 COMPONENTS system window graphics audio REQUIRED)
 target_link_libraries(GTMR PUBLIC sfml-system sfml-window sfml-graphics)
